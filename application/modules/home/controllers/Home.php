@@ -10,19 +10,16 @@ class Home extends MX_Controller
     }
     public function getRootModule()
     {
-        return 'home/home';
+        return 'home';
     }
 
     public function index()
     {
-        $data['view'] = 'body';
-        $data['title'] = 'Home';
-        // echo Modules::run($data);
-        echo Modules::run($this->getRootModule() . '/view', $data);
-    }
+        $data['view']           = 'body';
+        $data['title']          = 'Home';
+        $data['full_width']     = 1;
+        $data['module']         = $this->getRootModule();
 
-    public function view($data)
-    {
-        $this->load->view($data['view'], $data);
+        echo Modules::run("template", $data);
     }
 }

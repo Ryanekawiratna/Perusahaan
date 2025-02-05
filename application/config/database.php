@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$active_group = 'default';
-$query_builder = TRUE;
+$active_group = 'company_prof';
+$active_record = TRUE;
 
-$db['default'] = array(
+$db['company_prof'] = array(
     'dsn'    => '',
     'hostname' => 'localhost',
     'username' => 'root', // DEV
@@ -25,3 +25,20 @@ $db['default'] = array(
     'failover' => array(),
     'save_queries' => TRUE
 );
+
+// $db['company_prof']['hostname'] = 'localhost';
+// $db['company_prof']['username'] = 'root';
+// $db['company_prof']['password'] = '';
+// /* END SIMULASI */
+
+// $db['company_prof']['dbdriver'] = 'pdo';
+// $db['company_prof']['dbprefix'] = '';
+// $db['company_prof']['pconnect'] = FALSE;
+// $db['company_prof']['db_debug'] = TRUE;
+// $db['company_prof']['cache_on'] = FALSE;
+// $db['company_prof']['cachedir'] = '';
+// $db['company_prof']['char_set'] = 'utf8';
+// $db['company_prof']['dbcollat'] = 'utf8_general_ci';
+// $db['company_prof']['swap_pre'] = '';
+// $db['company_prof']['autoinit'] = TRUE;
+// $db['company_prof']['stricton'] = FALSE;

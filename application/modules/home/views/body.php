@@ -1,27 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    .container-fluid {
+        padding: 0;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($title) ? $title : 'Default Title'; ?></title>
-    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>"> -->
-    <!-- Tambahkan link CSS lainnya jika diperlukan -->
-</head>
+    body {
+        font-family: 'jakarta-sans', sans-serif;
+    }
 
-<body>
-    <header>
-        <h1><?php echo isset($header) ? $header : 'Selamat Datang'; ?></h1>
-        <!-- Navigasi bisa ditambahkan di sini -->
-    </header>
+    header {
+        margin: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+        padding: 10px;
+        font-size: x-large;
+    }
 
-    <main>
-        <?php echo $content; ?>
-    </main>
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+    }
 
-    <footer>
-        <!-- <p>&copy; <?php echo date('Y'); ?> Nama Perusahaan</p> -->
-    </footer>
-</body>
-
-</html>
+    #header-search {
+        border-radius: 20px;
+        text-align: center;
+        width: 10em;
+    }
+</style>
+<header>
+    <title><?php echo $title ?></title>
+    <div id="div_">Eureka</div>
+    <nav>
+        <a href="<?= base_url('login') ?>">Login</a>
+        <input id="header-search" type="text" placeholder="Mencari">
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+    </nav>
+</header>
