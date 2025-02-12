@@ -4,13 +4,14 @@
        }
 
        header {
-              margin: 5;
               display: grid;
               background-color: black;
               font-size: x-large;
               color: white;
+              scroll-behavior: smooth;
               /* border-radius: 20px; */
        }
+
 
        .navbar {
               display: flex;
@@ -47,6 +48,22 @@
               /* Add this line */
               /* top: 4px; */
        }
+
+       #main-div {
+              width: 100%;
+              height: 90px;
+       }
+
+       #gambar {
+              background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('assets/images/Patagonia.jpg');
+              position: relative;
+              height: 90vh;
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding-top: 90px;
+              transition: filter 0.3s;
+
+       }
 </style>
 <div id="main-page">
        <header>
@@ -64,7 +81,9 @@
                      </div>
               </nav>
        </header>
-       <div class="col-md-12" style="background-image: '<?php echo base_url('assets/images/Patagonia.jpg') ?>'">
+       <div id="gambar" class="col-md-12">
+              <div id="main_div" class="col-md-12">
 
+              </div>
        </div>
 </div>
