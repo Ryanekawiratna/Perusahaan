@@ -31,6 +31,7 @@
               padding-left: 10px;
               position: relative;
               top: -3px;
+
        }
 
        #nav-login {
@@ -52,6 +53,12 @@
        #main-div {
               width: 100%;
               height: 90px;
+              size: 40%;
+              align-items: center;
+              position: absolute;
+              color: white;
+              top: 120%;
+              left: 20%;
        }
 
        #gambar {
@@ -69,7 +76,7 @@
        <header>
               <nav class="navbar navbar-dark">
                      <div id="nav-title" class="col-md-4">
-                            Eureka
+                            <img style="width: 10%; height:70%" src=" <?= base_url('assets/images/logo.png') ?>" alt="">
                      </div>
                      <div id="nav-group" class="col-md-4">
                             <div id="nav-login" class="col-md-2" onClick="window.location.href='<?php echo base_url('login'); ?>'">
@@ -81,9 +88,28 @@
                      </div>
               </nav>
        </header>
-       <div id="gambar" class="col-md-12">
-              <div id="main_div" class="col-md-12">
-
+       <div style="height: auto; width:auto\9 ;  position: relative;">
+              <div id="gambar" class="col-md-12">
+                     <div id="main_div" class="col-md-12">
+                            <h1>
+                                   Welcome , comrade
+                            </h1>
+                     </div>
               </div>
+       </div>
+
+       <div id="kategori" class="col-md-12">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                     <div class="col-md-4">
+                            Spring
+                     </div>
+                     <div class="col-md-4" style="margin: 0; padding : 0;">
+                            Summer
+                     </div>
+                     <div class="col-md-4">
+                            Winter
+                     </div>
+
+              </nav>
        </div>
 </div>
