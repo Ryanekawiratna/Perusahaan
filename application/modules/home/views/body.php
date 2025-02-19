@@ -13,12 +13,12 @@
        }
 
 
-       .navbar {
+       /* .navbar {
               display: flex;
               justify-content: space-between;
               align-items: center;
               padding: 10px;
-       }
+       } */
 
        #nav-group {
               display: flex;
@@ -27,10 +27,12 @@
        }
 
        #nav-title {
-              flex-grow: 1;
-              padding-left: 10px;
+              /* flex-grow: 1; */
+              /* padding-left: 10px; */
+              text-align: center;
               position: relative;
-              top: -3px;
+              align-items: center;
+              top: -1px;
 
        }
 
@@ -38,7 +40,7 @@
               cursor: pointer;
               text-align: center;
               position: relative;
-              top: -4px;
+              top: -1px;
 
        }
 
@@ -46,8 +48,7 @@
               cursor: pointer;
               text-align: center;
               position: relative;
-              /* Add this line */
-              /* top: 4px; */
+              top: -1px;
        }
 
        #main-div {
@@ -75,12 +76,15 @@
 <div id="main-page">
        <header>
               <nav class="navbar navbar-dark">
-                     <div id="nav-title" class="col-md-4">
-                            <img style="width: 10%; height:70%" src=" <?= base_url('assets/images/logo.png') ?>" alt="">
+                     <div class="col-md-4">
+
+                     </div>
+                     <div id="nav-title" class="col-md-4" style="text-align:center;">
+                            <img style="width: 20%;" src=" <?= base_url('assets/images/logo_white.png') ?>" alt="">
                      </div>
                      <div id="nav-group" class="col-md-4">
                             <div id="nav-login" class="col-md-2" onClick="window.location.href='<?php echo base_url('login'); ?>'">
-                                   Login
+                                   <span class="mdi mdi-account-outline"></span>
                             </div>
                             <div id="nav-search" class="col-md-2" onclick="home.search()">
                                    <span class="mdi mdi-magnify"></span>
@@ -109,7 +113,6 @@
                      <div class="col-md-4">
                             Winter
                      </div>
-
               </nav>
        </div>
 </div>

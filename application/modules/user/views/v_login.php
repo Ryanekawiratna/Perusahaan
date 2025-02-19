@@ -1,30 +1,75 @@
-<div id="loginForm" class="container">
-    <div class="row d-flex justify-content-center align-items-center h-70">
-        <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+<style>
+       .form-control {
+              outline: 0;
+              border-width: 0 0 2px;
+              border-color: black
+       }
 
-            <div class="text-center">
-                <center>
-                    <img class="profile-img my-2" src="<?= base_url() ?>assets/images/logo.png">
-                </center>
-            </div>
-            <div class="card-login card shadow-lg" style="border-radius: 0.5rem;">
-                <!-- <form onsubmit="login.doLogin(this)"> -->
-                <div id="form_login" class="row text-center justify-content-center my-3">
-                    <p class="fs-3 mb-4">Login</p>
-                    <div class="col-lg-6 col-md-8 col-sm-6 col-8">
-                        <input type="text" id="username" class="form-control text-center fs-4" placeholder="Username" autocomplete="off" />
-                        <br>
-                        <input type="password" id="password" class="form-control text-center fs-4" placeholder="Password" autocomplete="off" />
-                        <button type="submit" id="btn_login" class="btn btn-success mt-3 fs-5" onclick="login.doLogin()">
-                            <span class="mdi mdi-login-variant"></span>
-                            Login
-                        </button>
-                    </div>
-                </div>
-                <!-- </form> -->
+       #btn_login {
+              border-radius: 25px;
+              height: 60px;
+              width: 190px;
+              font-size: 30px;
+              background-color: black;
+       }
+</style>
 
-            </div>
+<div class="row">
+       <div class="col-md-6" style="margin-left: 70px; margin-top: 80px">
+              <div class="col-md-12">
+                     <div class="">
+                            <h2>Log in.</h2>
+                            <br>
+                            <div class="col-md-12">
+                                   <div class="row">
+                                          <div class="col-md-12">
+                                                 <label for="">Email</label>
+                                                 <br>
+                                          </div>
+                                          <div class="col-md-12">
+                                                 <input type="text" class="form-control" require>
+                                                 <br>
+                                          </div>
+                                          <div class="col-md-12">
+                                                 <label for="">Username</label>
+                                                 <br>
+                                          </div>
+                                          <div class="col-md-12">
+                                                 <input type="text" class="form-control">
+                                                 <br>
+                                          </div>
+                                          <div class="col-md-12 text-center">
+                                                 <div class="" onclick="">
+                                                        <a style="color:black;" href="">Password Help ?</a>
+                                                 </div>
+                                                 <br>
+                                          </div>
+                                          <div class="col-md-12 text-center">
+                                                 <div class="col-md-12">
+                                                        <button type="submit" id="btn_login" class="btn  btn-dark" onclick="login.doLogin()">
+                                                               Login
+                                                        </button>
+                                                        <br>
+                                                        <br>
+                                                 </div>
+                                          </div>
+                                          <div class="col-md-12 text-center">
+                                                 Don't Have Account ?
+                                                 <a style="color: black;" href=""> Click Here !</a>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       <div class="col-md-5">
+              <div class="card" style="background-color: black; margin-top: 80px; margin-left: 40px; height :80%; color: white;">
+                     <div class="" id="sub-title">
+                            <h2 style="margin-left: 10px;">Eureka </h2>
+                     </div>
+                     <div>
 
-        </div>
-    </div>
+                     </div>
+              </div>
+       </div>
 </div>

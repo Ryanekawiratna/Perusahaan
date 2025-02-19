@@ -26,7 +26,8 @@ class Home extends MX_Controller
        {
               $data['view']           = 'body';
               $data['title']          = 'Home';
-              $data['full_width']     = 1;
+              $data['full_width']         = 1;
+              $data['no_border']     = 1;
               $data['module']         = $this->getRootModule();
               $data['header_data'] = $this->getHeaderJSandCSS();
 
