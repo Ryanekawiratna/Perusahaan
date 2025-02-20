@@ -26,8 +26,6 @@ class User extends MX_Controller
        {
               $data['view'] = 'v_login';
               $data['title'] = 'Login';
-              // $data['full_width']         = 1;
-              $data['no_border']     = 1;
               $data['module'] = $this->getRootModule();
               $data['header_data'] = $this->getHeaderJSandCSS();
 
@@ -36,9 +34,11 @@ class User extends MX_Controller
 
        public function auth()
        {
-              $data = $_POST['params'];
-
-              $auth = $this->mu->chekAuth($data);
+              // echo "<pre>";
+              // print_r($_POST);
+              // die;
+              // $data = $_POST['params'];
+              $auth = $this->mu->chekAuth($_POST);
               echo json_encode($auth);
        }
 }

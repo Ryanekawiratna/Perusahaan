@@ -27,15 +27,15 @@
                                                  <br>
                                           </div>
                                           <div class="col-md-12">
-                                                 <input type="text" class="form-control" require>
+                                                 <input type="text" id="username" class="form-control" placeholder="Enter Your Email/Username" require>
                                                  <br>
                                           </div>
                                           <div class="col-md-12">
-                                                 <label for="">Username</label>
+                                                 <label for="">Password</label>
                                                  <br>
                                           </div>
                                           <div class="col-md-12">
-                                                 <input type="text" class="form-control">
+                                                 <input type="password" id="password" class="form-control" placeholder="Enter Your Password" require>
                                                  <br>
                                           </div>
                                           <div class="col-md-12 text-center">

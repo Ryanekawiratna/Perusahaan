@@ -3,35 +3,37 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class M_user extends CI_Model
 {
-    private $web;
-    public function __construct()
-    {
-        parent::__construct();
-        $this->web    = $this->load->database('company_prof', true);
-        $this->datetime_now = date('Y-m-d H:i:s');
-    }
+       private $web;
+       public function __construct()
+       {
+              parent::__construct();
+              $this->web    = $this->load->database('company_prof', true);
+              $this->datetime_now = date('Y-m-d H:i:s');
+       }
 
-    public function chekAuth($data)
-    {
+       public function chekAuth($data)
+       {
+              $result['is_valid'] = false;
+              $pass = $data['password'];
 
-        $result['is_valid'] = false;
-        $pass = $data['password'];
+              $sql = "select
+              u.password
+              from `user` u 
+              where u.username = '" . $data['user'] . "'";
+              $hash = $this->web->query($sql)->result_array()[0];
+              // echo "<pre>";
+              // print_r($hash);
+              // die;
 
-        $sql = "select
-        u.password
-        from `user` u 
-        where u.user = '" . $data['user'] . "'";
-        $hash = $this->web->query($sql)->result_array()[0];
+              // if (count($hash) > 0) {
+              if (empty($hash) || count($hash) > 0) {
+                     if (password_verify($pass, $hash['password'])) {
+                            $result['is_valid']     = true;
+                     } else {
+                            $result['is_valid']     = false;
+                     }
+              }
 
-        // if (count($hash) > 0) {
-        if (empty($hash) || count($hash) > 0) {
-            if (password_verify($pass, $hash['password'])) {
-                $result['is_valid']     = true;
-            } else {
-                $result['is_valid']     = false;
-            }
-        }
-
-        return $result;
-    }
+              return $result;
+       }
 }

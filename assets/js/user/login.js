@@ -16,9 +16,7 @@ var login = {
 		$.ajax({
 			dataType: "json",
 			type: "POST",
-			data: {
-				params,
-			},
+			data: params,
 			url: url.base_url(login.module()) + "auth",
 			beforeSend: function () {
 				message.loadingProses("Proses Login");
@@ -28,14 +26,15 @@ var login = {
 				message.closeLoading();
 			},
 			success: function (resp) {
-				message.closeLoading();
 				// alert(resp);
 				if (resp.is_valid) {
+					message.closeLoading();
 					toastr.success("Proses Login Berhasil");
 					setTimeout(function (elm) {
 						window.location.href = url.base_url(login.dashboard());
 					}, 4000);
 				} else {
+					message.closeLoading();
 					toastr.error("Username atau Password Salah");
 				}
 			},
