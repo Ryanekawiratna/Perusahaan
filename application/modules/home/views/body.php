@@ -80,7 +80,7 @@
 
                      </div>
                      <div id="nav-title" class="col-md-4" style="text-align:center;">
-                            <img style="width: 20%;" src=" <?= base_url('assets/images/logo_white.png') ?>" alt="">
+                            <img style="width: 20%;" src=" <?= base_url('assets/images/logo_black_terbaru.png') ?>" alt="">
                      </div>
                      <div id="nav-group" class="col-md-4">
                             <div id="nav-login" class="col-md-2" onClick="window.location.href='<?php echo base_url('login'); ?>'">

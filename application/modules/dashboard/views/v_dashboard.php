@@ -14,9 +14,8 @@
        <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
               <div class="sidenav-header">
                      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-                     <a class="navbar-brand m-0">
-                            <img src="../assets/images/logo.png" width="45px" height="26px" class="navbar-brand-img h-100" alt="main_logo">
-                            <span class="ms-1 font-weight-bold">Creative Tim</span>
+                     <a class="navbar-brand m-0 text-center">
+                            <img src="../assets/images/logo_baru_putih_png.png" width="50px" height="35px" class="navbar-brand-img h-100" alt="main_logo">
                      </a>
               </div>
               <hr class="horizontal dark mt-0">
@@ -62,7 +61,7 @@
                                           <span class="nav-link-text ms-1">RTL</span>
                                    </a>
                             </li>
-                            <li class="nav-item mt-3">
+                            <li class="nav-item ">
                                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
                             </li>
                             <li class="nav-item">
@@ -91,20 +90,9 @@
                             </li>
                      </ul>
               </div>
-              <div class="sidenav-footer mx-3 ">
-                     <div class="card card-plain shadow-none" id="sidenavCard">
-                            <img class="w-50 mx-auto" src="../assets/img/illustrations/icon-documentation.svg" alt="sidebar_illustration">
-                            <div class="card-body text-center p-3 w-100 pt-0">
-                                   <div class="docs-info">
-                                          <h6 class="mb-0">Need help?</h6>
-                                          <p class="text-xs font-weight-bold mb-0">Please check our docs</p>
-                                   </div>
-                            </div>
-                     </div>
-                     <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard" target="_blank" class="btn btn-dark btn-sm w-100 mb-3">Documentation</a>
-                     <a class="btn btn-primary btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
-              </div>
        </aside>
+
+
        <main class="main-content position-relative border-radius-lg ">
               <!-- Navbar -->
               <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
@@ -346,7 +334,7 @@
                                           <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                                                  <div class="carousel-inner border-radius-lg h-100">
                                                         <div class="carousel-item h-100 active" style="background-image: url('../assets/img/carousel-1.jpg');
-      background-size: cover;">
+                                                           background-size: cover;">
                                                                <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                                                       <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                                                              <i class="ni ni-camera-compact text-dark opacity-10"></i>
@@ -356,7 +344,7 @@
                                                                </div>
                                                         </div>
                                                         <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg');
-      background-size: cover;">
+                                                                                                   background-size: cover;">
                                                                <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                                                       <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                                                              <i class="ni ni-bulb-61 text-dark opacity-10"></i>
@@ -366,7 +354,7 @@
                                                                </div>
                                                         </div>
                                                         <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-3.jpg');
-      background-size: cover;">
+                                                                             background-size: cover;">
                                                                <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                                                       <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                                                              <i class="ni ni-trophy text-dark opacity-10"></i>
@@ -630,6 +618,8 @@
                      </footer>
               </div>
        </main>
+
+
        <div class="fixed-plugin">
               <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
                      <i class="fa fa-cog py-2"> </i>
