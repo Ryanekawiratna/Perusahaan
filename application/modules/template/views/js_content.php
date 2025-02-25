@@ -9,3 +9,5 @@
 <script type="text/javascript" src="<?= base_url() ?>assets/js/message.js?"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/url.js?"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/sidebar.js?"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/js/plugins/smooth-scrollbar.min.js"></script>

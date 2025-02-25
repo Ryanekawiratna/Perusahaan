@@ -34,11 +34,10 @@ class User extends MX_Controller
 
        public function auth()
        {
-              // echo "<pre>";
-              // print_r($_POST);
-              // die;
-              // $data = $_POST['params'];
               $auth = $this->mu->chekAuth($_POST);
+              if ($auth['is_valid']) {
+                     $this->session->set_userdata(['is_login' => 1]);
+              }
               echo json_encode($auth);
        }
 }

@@ -19,7 +19,9 @@ class Dashboard extends MX_Controller
 
               $data = array(
                      '<script src="' . base_url() . 'assets/js/dashboard/dashboard.js?v=' . assets_version() . '"></script>',
+                     '<script src="' . base_url() . 'assets/js/dashboard/argon-dashboard.min.js?v=2.1.0"></script>',
               );
+
               return $data;
        }
 
@@ -33,5 +35,22 @@ class Dashboard extends MX_Controller
               $data['header_data']    = $this->getHeaderJSandCSS();
 
               echo Modules::run('template', $data);
+       }
+
+       public function profile()
+       {
+              $data['view']           = "v_profile";
+              $data['title']             = "Profile";
+              // $data['full_width'] = 1;
+              // $data['no_border'] = 1;
+              $data['module']     = $this->getRootModule();
+              $data['header_data']    = $this->getHeaderJSandCSS();
+
+              echo Modules::run('template', $data);
+       }
+
+       public function editProfile()
+       {
+              $this->load->view($this->getRootModule() . '/v_edit_profile');
        }
 }
