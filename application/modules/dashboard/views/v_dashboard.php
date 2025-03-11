@@ -1,7 +1,7 @@
 <div class="min-height-300 bg-dark position-absolute w-100"></div>
 
 
-<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4" id="sidenav-main">
        <div class="sidenav-header">
               <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
               <a class="navbar-brand m-0 text-center">
@@ -60,8 +60,8 @@
                                    <li class="breadcrumb-item text-sm text-white active" aria-current="page"><?php echo ucfirst(end(explode("/", $_SERVER['REQUEST_URI']))) ?></li>
                             </ol>
                      </nav>
-                     <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
-                            <a href="javascript:;" class="nav-link p-0">
+                     <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none">
+                            <a href="javascript:;" class="nav-link p-0" id="iconNavbarSidenav">
                                    <div class="sidenav-toggler-inner">
                                           <i class="sidenav-toggler-line bg-white"></i>
                                           <i class="sidenav-toggler-line bg-white"></i>
@@ -80,7 +80,7 @@
                                    <li class="nav-item d-flex align-items-center">
                                           <a href="<?= base_url() ?>" class="nav-link text-white font-weight-bold px-0">
                                                  <i class="fa fa-user me-sm-1"></i>
-                                                 <span class="d-sm-inline d-none">Sign Out</span>
+                                                 <span class="d-sm-inline d-none">Sign out</span>
                                           </a>
                                    </li>
                             </ul>
@@ -88,6 +88,7 @@
               </div>
        </nav>
        <!-- End Navbar -->
+
        <div class="container-fluid py-4">
               <div class="row">
                      <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -96,13 +97,10 @@
                                           <div class="row">
                                                  <div class="col-8">
                                                         <div class="numbers">
-                                                               <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money</p>
+                                                               <p class="text-sm mb-0 text-uppercase font-weight-bold">All Stock</p>
                                                                <h5 class="font-weight-bolder">
-
+                                                                      <?= $jumlah_barang['jumlah'] ?> Item
                                                                </h5>
-                                                               <p class="mb-0">
-
-                                                               </p>
                                                         </div>
                                                  </div>
                                                  <div class="col-4 text-end">
@@ -120,7 +118,7 @@
                                           <div class="row">
                                                  <div class="col-8">
                                                         <div class="numbers">
-                                                               <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
+                                                               <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Keluar</p>
                                                                <h5 class="font-weight-bolder">
 
                                                                </h5>
@@ -238,4 +236,6 @@
               </div>
 
        </div>
+
+
 </main>

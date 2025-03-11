@@ -3,10 +3,6 @@ var login = {
 		return "user";
 	},
 
-	dashboard: (elm) => {
-		return "dashboard";
-	},
-
 	doLogin: (e) => {
 		let params = {
 			user: $("#username").val(),
@@ -31,7 +27,7 @@ var login = {
 					message.closeLoading();
 					toastr.success("Proses Login Berhasil");
 					setTimeout(function (elm) {
-						window.location.href = url.base_url(login.dashboard());
+						window.location.href = "http://localhost/web/dashboard";
 					}, 4000);
 				} else {
 					message.closeLoading();

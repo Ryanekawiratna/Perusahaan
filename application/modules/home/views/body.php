@@ -95,7 +95,7 @@
        <div style="height: auto; width:auto\9 ;  position: relative;">
               <div id="gambar" class="col-md-12">
                      <div id="main_div" class="col-md-12">
-                            <h1>
+                            <h1 style="color: white;">
                                    Welcome , comrade
                             </h1>
                      </div>

@@ -12,4 +12,3 @@
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo base_url() ?>assets/css/mdi/css/materialdesignicons.min.css">
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo base_url() ?>assets/css/css-loader.css">
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo base_url() ?>assets/css/toastr.css">
-<link rel="stylesheet" media="screen" type="text/css" href="<?php echo base_url() ?>assets/css/argon-dashboard.css?v=2.1.0">
