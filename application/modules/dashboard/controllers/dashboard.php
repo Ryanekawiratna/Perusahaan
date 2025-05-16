@@ -18,9 +18,9 @@ class Dashboard extends MX_Controller
        {
 
               $data = array(
-                     '<link rel="stylesheet"  href=' . base_url() . 'assets/css/argon-dashboard.css?v=2.1.0">',
+                     // '<link rel="stylesheet"  href=' . base_url() . 'assets/css/argon-dashboard.css?v=2.1.0">',
                      '<script src="' . base_url() . 'assets/js/dashboard/dashboard.js?v=' . assets_version() . '"></script>',
-                     '<script src="' . base_url() . 'assets/js/dashboard/argon-dashboard.min.js?v=2.1.0"></script>',
+                     // '<script src="' . base_url() . 'assets/js/dashboard/argon-dashboard.min.js?v=2.1.0"></script>',
               );
 
               return $data;
